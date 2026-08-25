@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Área de un Triángulo</title>
+</head>
+<body>
+    <h1>Área de un Triángulo</h1>
+    <div id="resultado" style="color: green;"></div>
+    <script>
+        function calcularAreaTriangulo() {
+            let base = parseFloat(prompt("Ingresa la base:"));
+            let altura = parseFloat(prompt("Ingresa la altura:"));
+            let area = (base * altura) / 2;
+            document.getElementById("resultado").innerHTML = 
+                la base es: ${base} <br> la altura es: ${altura} <br> el área del triángulo es: ${area};
+        }
+        calcularAreaTriangulo();
+    </script>
+</body>
+</html>
