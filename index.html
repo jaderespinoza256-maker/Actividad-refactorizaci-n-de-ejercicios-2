@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Área y Perímetro de un Rectángulo</title>
+</head>
+<body>
+    <h1>Área y Perímetro de un Rectángulo</h1>
+    <div id="resultado" style="color: green;"></div>
+    <script>
+        function calcularRectangulo() {
+            let base = parseFloat(prompt("Ingresa la base:"));
+            let altura = parseFloat(prompt("Ingresa la altura:"));
+            let area = base * altura;
+            let perimetro = 2 * (base + altura);
+            document.getElementById("resultado").innerHTML =
+                "Área del rectángulo (base " + base + ", altura " + altura + ") = " + area + "<br>" +
+                "Perímetro del rectángulo (base " + base + ", altura " + altura + ") = " + perimetro;
+        }
+        calcularRectangulo();
+    </script>
+</body>
+</html>
